@@ -5,7 +5,7 @@ import subprocess
 a_file = open("nametag.txt")
 lines = a_file.readlines()
 for line in lines:
-    print(line)
+    print(line,end='╯')
 a_file.close()
 interface = input("Interface>")
 new_mac =input("MAC address>")
