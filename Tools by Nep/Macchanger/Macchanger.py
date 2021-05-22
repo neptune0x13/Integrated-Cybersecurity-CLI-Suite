@@ -2,11 +2,7 @@
 import subprocess
 import optparse
 
-a_file = open("nametag.txt")
-lines = a_file.readlines()
-for line in lines:
-    print(line,end='╯')
-a_file.close()
+subprocess.call(["figlet", "NEPTUNE"]) 
 
 def get_arguments():
     parser = optparse.OptionParser()
