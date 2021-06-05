@@ -3,7 +3,7 @@ import scapy.all as scapy
 import subprocess
 import optparse
 
-subprocess.call(["figlet", "Port Scanner"])
+subprocess.call(["figlet", "Network Scanner"])
 print("\t\t\t\t\t\t by neptune0x13")
 
 def get_arguments():
