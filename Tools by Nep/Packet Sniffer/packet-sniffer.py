@@ -25,7 +25,7 @@ def sniffed_packet(packet):
         url = packet[http.HTTPRequest].Host + packet[http.HTTPRequest].Path
         print("[+] HTTP Request : "+ str(url))
         if packet.haslayer(scapy.Raw):
-            print(packet[scapy.Raw].load)                       #This field can be changed according to needful info
+            print("\n\n" + str(packet[scapy.Raw].load))                       #This field can be changed according to needful info
 
 options = get_arguments()
 sniff(options.iface)
