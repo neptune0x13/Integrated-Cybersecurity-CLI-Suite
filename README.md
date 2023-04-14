@@ -40,7 +40,7 @@ Cybersecurity tool kit
 		```
 		pip3 install -r requirements.txt
  		```
-3. **Run CLI app**
+3. **To Run CLI app**
    
    **ARP Spoofer**
 		
