@@ -4,6 +4,7 @@ A CLI Suite full of open source tools for security researchers
 ## Requirements 
   - [scapy](https://scapy.readthedocs.io/en/latest/) 
   - [optparse](https://docs.python.org/3/library/optparse.html)
+  - [NetfilterQueue](https://pypi.org/project/NetfilterQueue/)
 ## ARP Spoofer
    This tool can be used to send falsified ARP messages to associate your own MAC address with the IP address of your another computer, 
    causing traffic intended for that device to be sent to the your computer instead. It uses the Scapy library to construct and send ARP packets to the target and 
