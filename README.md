@@ -1,5 +1,5 @@
 # Integrated Cybersecurity CLI Suite
-A CLI Suite full of open source tools for secuirty researchers
+A CLI Suite full of open source tools for security researchers
 
 ## Requirements 
   - [scapy](https://scapy.readthedocs.io/en/latest/) 
