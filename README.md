@@ -5,6 +5,7 @@ A CLI Suite full of open source tools for security researchers
   - [scapy](https://scapy.readthedocs.io/en/latest/) 
   - [optparse](https://docs.python.org/3/library/optparse.html)
   - [NetfilterQueue](https://pypi.org/project/NetfilterQueue/)
+  - [re](https://docs.python.org/3/library/re.html)
 ## ARP Spoofer
    This tool can be used to send falsified ARP messages to associate your own MAC address with the IP address of your another computer, 
    causing traffic intended for that device to be sent to the your computer instead. It uses the Scapy library to construct and send ARP packets to the target and 
@@ -22,7 +23,7 @@ A CLI Suite full of open source tools for security researchers
    to the ARP request. This tool can be useful for quickly identifying devices on a network and checking for any unauthorized devices or potential security issues.
 
 ## Packet Sniffer
-   This tool  allows the user to sniff packets on a specific network interface and can extract HTTP request URLs and payload data from packets that have the
+   This tool allows the user to sniff packets on a specific network interface and can extract HTTP request URLs and payload data from packets that have the
    appropriate layers. It uses the optparse module to allow the user to specify the interface to sniff on. This tool can be useful for network administrators and 
    security professionals to monitor and analyze network traffic
 
@@ -30,6 +31,11 @@ A CLI Suite full of open source tools for security researchers
    This tool allows the interception and modification of HTTP download requests within a local network. By capturing the network traffic, File Interceptor identifies 
    the download requests being made by other computers on the same network. It then provides the ability to replace the intended file with a different file of choice,
    effectively altering the download destination.
+
+## Code Injector
+   This tool allows to inject custom JavaScript code into HTTP responses. By intercepting network packets and leveraging the capabilities of the netfilterqueue and scapy libraries,
+   this tool seamlessly modifies HTML content by injecting JavaScript code into the <body> section of HTTP responses. It also adjusts the Content-Length header to 
+   accurately reflect the length of the injected code. With real-time feedback on intercepted packets
 
 ## How to run the program?
 1. **Download this GitHub repository**
@@ -64,5 +70,10 @@ A CLI Suite full of open source tools for security researchers
                 
 		python3 'Tools by Nep/FileInterceptor/file_interceptor.py'
 	- Edit file type and site to download the replaced file in the python file before running
+ 
+   **Code Injector**
+                
+		python3 'Tools by Nep/CodeInjector/code_injector.py'
+	- Edit injection_code in the python file to the js code you wan the user to execute before running
 
 All these tools should only be used on networks with proper authorization and in compliance with applicable laws and regulations.
