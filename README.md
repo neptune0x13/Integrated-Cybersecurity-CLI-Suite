@@ -37,6 +37,10 @@ A CLI Suite full of open source tools for security researchers
    this tool seamlessly modifies HTML content by injecting JavaScript code into the <body> section of HTTP responses. It also adjusts the Content-Length header to 
    accurately reflect the length of the injected code. With real-time feedback on intercepted packets
 
+## Web Crawler
+   designed to explore and discover subdirectories within a specified web page. By utilizing web scraping techniques, it retrieves the HTML content of the target web page and extracts 
+   all the links present in the page. The tool then recursively crawls through each extracted link, identifying and printing the subdirectories it encounters.
+
 ## How to run the program?
 1. **Download this GitHub repository**
 	- Either Clone the repository
@@ -75,5 +79,10 @@ A CLI Suite full of open source tools for security researchers
                 
 		python3 'Tools by Nep/CodeInjector/code_injector.py'
 	- Edit injection_code in the python file to the js code you wan the user to execute before running
+
+   **Web Crawler**
+                
+		python3 'Tools by Nep/WebCrawler/web_crawler.py'
+	- Edit target_url in the python file to the intented url before running
 
 All these tools should only be used on networks with proper authorization and in compliance with applicable laws and regulations.
