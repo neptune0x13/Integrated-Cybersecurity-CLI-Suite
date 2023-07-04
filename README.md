@@ -1,5 +1,5 @@
-# Tool-Kit
-Cybersecurity tool kit
+# Integrated Cybersecurity CLI Suite
+A CLI Suite full of open source tools for secuirty researchers
 
 ## Requirements 
   - [scapy](https://scapy.readthedocs.io/en/latest/) 
