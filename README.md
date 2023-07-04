@@ -26,7 +26,9 @@ A CLI Suite full of open source tools for security researchers
    security professionals to monitor and analyze network traffic
 
 ## File Interceptor
-   
+   This tool allows the interception and modification of HTTP download requests within a local network. By capturing the network traffic, File Interceptor identifies 
+   the download requests being made by other computers on the same network. It then provides the ability to replace the intended file with a different file of choice,
+   effectively altering the download destination.
 
 ## How to run the program?
 1. **Download this GitHub repository**
