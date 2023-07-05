@@ -38,7 +38,7 @@ A CLI Suite full of open source tools for security researchers
    accurately reflect the length of the injected code. With real-time feedback on intercepted packets
 
 ## Web Crawler
-   designed to explore and discover subdirectories within a specified web page. By utilizing web scraping techniques, it retrieves the HTML content of the target web page and extracts 
+   This tools is designed to explore and discover subdirectories within a specified web page. By utilizing web scraping techniques, it retrieves the HTML content of the target web page and extracts 
    all the links present in the page. The tool then recursively crawls through each extracted link, identifying and printing the subdirectories it encounters.
 
 ## How to run the program?
