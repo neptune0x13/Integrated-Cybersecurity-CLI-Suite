@@ -3,7 +3,7 @@ import re
 import urllib.parse
 import subprocess
 
-target_url = "[target url"
+target_url = "[target url]"
 target_links = []
 
 subprocess.call(["figlet", "Web Crawler "])
